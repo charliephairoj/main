@@ -1,0 +1,88 @@
+.contact_page{
+    display:table;
+    height:100%;
+    width:100%;
+    
+    @input-font:proxima;
+    .input{
+        font-family:@input-font;
+        background:transparent;
+        border:1px solid grey;
+        padding:1em;
+        outline:none;
+        color:#FFFFFF;
+        letter-spacing:0.1em;
+        font-size:0.8em;
+        .transition(all, 250ms, linear);
+        &:focus{
+            background:white;
+            color:#000000;
+        }
+    }
+  
+    .modal{
+       
+        display:table-cell;
+        vertical-align:middle;
+        text-align:center;
+        position:relative;
+        padding:50px 75px;
+        
+        form{
+            position:relative;
+            margin:0 auto;
+            display:inline-block;
+            table{
+                tr{
+                    td{
+                        text-align:left;
+                        padding:5px 0;
+                        input{
+                            width:200px;
+                            .input;
+                            .transition(all, 250ms, linear);
+                            &:focus{
+                                background:white;
+                                color:#000000;
+                            }
+                        }
+                        textarea{
+                            width:400px;
+                            height:150px;
+                            margin:0;
+                            .input;
+                            .transition(all, 250ms, linear);
+                            
+                            &:focus{
+                                background:white;
+                                color:#000000;
+                            }
+                        }
+                        
+                    }
+                    //States
+                    &:last-child{
+                        td{
+                            font-family:avenir;
+                            text-align:right;
+                            button{
+                                border-radius:2px;
+                                .button;
+                                
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        
+    }
+    
+    .success-modal{
+        padding:50px;
+    }
+    
+}

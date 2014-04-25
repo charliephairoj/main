@@ -1,0 +1,31 @@
+.slideshow{
+    position:absolute;
+    height:300px;
+    width:500px;
+    .slideshow-container{
+        position:absolute;
+        z-index:0;
+        height:100%;
+        width:100%;
+        top:0px;
+        left:0px;
+        overflow:hidden;
+        .opacity(0);
+        img{
+            position:absolute;
+            bottom:0px;
+            left:0px;
+            &.heightBased{
+                height:100%;
+                width:auto;
+            }
+            &.widthBased{
+                width:100%;
+                height:auto;
+            }
+        }
+        &.active{
+            z-index:1;
+        }
+    }
+}

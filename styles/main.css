@@ -1,0 +1,1148 @@
+@import "fonts.css";
+/*Less file*/
+/*Fonts*/
+.width {
+  width: 950px;
+  left: 50%;
+  margin-left: -475px;
+}
+/*Helper styles*/
+/*HTML BODY*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: future, Tahoma, Helvetica, sans-serif;
+}
+/*Menu*/
+.menu {
+  position: relative;
+  padding: 1em;
+  margin: 0px;
+  width: 100%;
+  z-index: 10;
+}
+.menu .menu-container {
+  position: relative;
+  width: 950px;
+  left: 50%;
+  margin-left: -475px;
+}
+.menu .menu-container .logo-container {
+  margin-left: 0;
+  height: 2em;
+}
+.menu .menu-container .logo-container .logo {
+  height: 2em;
+}
+.menu .menu-container ul {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  white-space: nowrap;
+  text-align: right;
+}
+.menu .menu-container ul li {
+  padding-left: 65px;
+  display: inline;
+  list-style-type: none;
+  vertical-align: bottom;
+}
+.menu .menu-container ul li a {
+  font-family: proxima;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.1em;
+  letter-spacing: 0.07em;
+  padding: 0.45em 0em;
+  height: 100%;
+  vertical-align: bottom;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.menu .menu-container ul li a:hover {
+  opacity: 1;
+}
+.menu .menu_background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000000;
+  z-index: -1;
+}
+/*bottom_bar*/
+.bottom-bar {
+  position: absolute;
+  bottom: 0px;
+  height: auto;
+  width: 100%;
+  z-index: 0;
+  padding: 15px 0px 15px 0px;
+}
+.bottom-bar .menu-container {
+  position: relative;
+  width: 950px;
+  left: 50%;
+  margin-left: -475px;
+}
+.bottom-bar .menu-container .line {
+  width: 100%;
+  height: 1px;
+  background-color: #FFFFFF;
+  opacity: 0.4;
+  position: relative;
+  top: 0;
+  margin-bottom: 0.5em;
+}
+.bottom-bar .menu-container a {
+  font-family: proxima;
+  text-decoration: none;
+  color: white;
+  margin-left: 0;
+  font-size: 1em;
+  height: 100%;
+  vertical-align: middle;
+  letter-spacing: 0.07em;
+}
+.bottom-bar .menu-container ul {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.bottom-bar .menu-container ul li {
+  margin-left: 0.8em;
+  float: left;
+}
+.bottom-bar .menu-container ul li a {
+  font-family: proxima;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+.bottom-bar .menu-container ul li span {
+  color: white;
+  font-size: 1em;
+}
+/*
+ * Directives
+ */
+/*Background*/
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background-color: black;
+}
+.background .bg_container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+.background .bg_container img {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.background .bg_container img.heightBased {
+  height: 100%;
+  width: auto;
+}
+.background .bg_container img.widthBased {
+  width: 100%;
+  height: auto;
+}
+.background .bg_container .white-background {
+  height: 100%;
+  width: 100%;
+  background: #FFFFFF;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 2;
+}
+.background .overlay {
+  position: absolute;
+  bottom: 0px;
+  height: 25%;
+  width: 100%;
+  left: 0px;
+  z-index: 1;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.55) 99%, rgba(0, 0, 0, 0.55) 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(10%, rgba(0, 0, 0, 0)), color-stop(99%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.55)));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.55) 99%, rgba(0, 0, 0, 0.55) 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.55) 99%, rgba(0, 0, 0, 0.55) 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.55) 99%, rgba(0, 0, 0, 0.55) 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.55) 99%, rgba(0, 0, 0, 0.55) 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#8c000000', GradientType=0);
+  /* IE6-9 */
+
+}
+/*Modal*/
+/*Modal*/
+.modal {
+  z-index: 5;
+  font-family: avenir;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 99%, rgba(0, 0, 0, 0.6) 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(99%, rgba(0, 0, 0, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.6)));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 99%, rgba(0, 0, 0, 0.6) 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 99%, rgba(0, 0, 0, 0.6) 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 99%, rgba(0, 0, 0, 0.6) 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 99%, rgba(0, 0, 0, 0.6) 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99000000', endColorstr='#99000000', GradientType=0);
+  /* IE6-9 */
+
+}
+.modal .modal_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  background-color: #000000;
+  opacity: 0.8;
+}
+.modal .modal-close-button {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 2;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.modal .modal-close-button div {
+  height: 8px;
+  width: 16px;
+  margin: 2px 2px 10px;
+  background-color: #FFFFFF;
+}
+.modal .modal-close-button:hover {
+  opacity: 1;
+}
+.modal .button {
+  padding: 0.5em 0.7em;
+  bottom: 0.5em;
+  right: 0.5em;
+  position: absolute;
+  font-size: 0.8em;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #808080;
+  color: #808080;
+  text-decoration: none;
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.modal .button:hover {
+  color: white;
+  border: 1px solid white;
+}
+.modal .button:hover {
+  color: white;
+  border: 1px solid white;
+}
+.modal p {
+  font-family: proxima;
+  letter-spacing: 0.07em;
+  color: #b1b1b1;
+}
+/*Slideshow*/
+.slideshow {
+  position: absolute;
+  height: 300px;
+  width: 500px;
+}
+.slideshow .slideshow-container {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  opacity: 0;
+}
+.slideshow .slideshow-container img {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.slideshow .slideshow-container img.heightBased {
+  height: 100%;
+  width: auto;
+}
+.slideshow .slideshow-container img.widthBased {
+  width: 100%;
+  height: auto;
+}
+.slideshow .slideshow-container.active {
+  z-index: 1;
+}
+/*Rollover*/
+.rollover {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.rollover .rollover-title {
+  color: white;
+  font-size: 1em;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  top: 43%;
+  font-family: avenir;
+}
+.rollover .rollover-background {
+  position: absolute;
+  z-index: 0;
+  background: black;
+  opacity: 0.7;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+/*
+ * Pages
+ */
+/*View Template*/
+.view {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+/*legal Modal*/
+.legal-modal {
+  width: 300px;
+  padding: 50px;
+  color: white;
+  opacity: 0;
+  display: none;
+}
+.legal-modal h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+}
+.legal-modal p {
+  text-align: center;
+  font-size: 0.85em;
+  line-height: 1.4em;
+}
+/*Company Page*/
+.company_page {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.company_page .modal {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  padding: 50px 75px;
+  color: #FFFFFF;
+  width: 400px;
+}
+.company_page .modal h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+.company_page .modal p {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+.company-page {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.company-page .modal {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  padding: 50px 75px;
+  color: #FFFFFF;
+  width: 400px;
+}
+.company-page .modal h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+.company-page .modal p {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+/*Collection Page*/
+.collection_page {
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.collection_page .modal {
+  position: absolute;
+  height: 350px;
+  width: 100%;
+  left: 0px;
+  top: 50%;
+  background-color: transparent;
+  margin-top: -100px;
+}
+.collection_page .modal .panel_container {
+  height: 100%;
+  width: 950px;
+  left: 50%;
+  margin-left: -475px;
+  top: 0px;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.collection_page .modal .panel_container .panel {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  float: left;
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.6;
+  overflow: hidden;
+  /*
+                span{
+                    color:white;
+                    font-size:1.6em;
+                    margin:0 auto;
+                }*/
+
+}
+.collection_page .modal .panel_container .panel img {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/*Sofa Page*/
+.sofa_page {
+  height: 100%;
+  width: 100%;
+}
+.sofa_page .modal {
+  position: absolute;
+  height: 350px;
+  width: 950px;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  background-color: transparent;
+}
+.sofa_page .modal .container {
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  width: 950px;
+  left: 50%;
+  margin-left: -475px;
+  top: 0px;
+}
+.sofa_page .modal .container .button {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+}
+.sofa_page .modal .container .button img {
+  height: 100%;
+  width: 100%;
+}
+.sofa_page .modal .container .next {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  right: 0px;
+}
+.sofa_page .modal .container .next img {
+  height: 100%;
+  width: 100%;
+}
+.sofa_page .modal .container .previous {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  left: 0px;
+}
+.sofa_page .modal .container .previous img {
+  height: 100%;
+  width: 100%;
+}
+.sofa_page .modal .container .trail {
+  position: absolute;
+  left: 0px;
+  top: -4em;
+  font-size: 0.4em;
+  color: grey;
+}
+.sofa_page .modal .container .trail a {
+  font-family: avenir;
+  color: grey;
+  text-decoration: underline;
+  padding-right: 0.8em;
+}
+.sofa_page .modal .container .trail a.current {
+  text-decoration: none;
+}
+.sofa_page .modal .container .trail span {
+  font-family: avenir;
+  padding-right: 0.8em;
+}
+.sofa_page .modal .container .tile-container {
+  height: 100%;
+  position: absolute;
+  left: 0px;
+}
+.sofa_page .modal .container .tile-container .tile-row {
+  position: relative;
+  height: 50%;
+}
+.sofa_page .modal .container .tile-container .tile-row .tile {
+  height: 100%;
+  width: 237.5px;
+  float: left;
+  position: relative;
+}
+.sofa_page .modal .container .tile-container .tile-row .tile a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.sofa_page .modal .container .tile-container .tile-row .tile a img {
+  height: 100%;
+  width: 100%;
+}
+.sofa_page .modal .modal_background {
+  display: none;
+}
+/*Sofa Page2*/
+.sofa_page2 {
+  height: 100%;
+  width: 100%;
+}
+.sofa_page2 .modal {
+  position: absolute;
+  height: 350px;
+  width: 950px;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  background-color: transparent;
+}
+.sofa_page2 .modal .container {
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  width: 950px;
+  left: 50%;
+  margin-left: -475px;
+  top: 0px;
+}
+.sofa_page2 .modal .container .button {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+}
+.sofa_page2 .modal .container .button img {
+  height: 100%;
+  width: 100%;
+}
+.sofa_page2 .modal .container .next {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  right: 0px;
+}
+.sofa_page2 .modal .container .next img {
+  height: 100%;
+  width: 100%;
+}
+.sofa_page2 .modal .container .previous {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  left: 0px;
+}
+.sofa_page2 .modal .container .previous img {
+  height: 100%;
+  width: 100%;
+}
+.sofa_page2 .modal .container .trail {
+  position: absolute;
+  left: 0px;
+  top: -4em;
+  font-size: 0.4em;
+  color: grey;
+}
+.sofa_page2 .modal .container .trail a {
+  font-family: avenir;
+  color: grey;
+  text-decoration: underline;
+  padding-right: 0.8em;
+}
+.sofa_page2 .modal .container .trail a.current {
+  text-decoration: none;
+}
+.sofa_page2 .modal .container .trail span {
+  font-family: avenir;
+  padding-right: 0.8em;
+}
+.sofa_page2 .modal .container .tile-container {
+  height: 100%;
+  position: absolute;
+  left: 0px;
+}
+.sofa_page2 .modal .container .tile-container .tile-row {
+  position: relative;
+  height: 50%;
+}
+.sofa_page2 .modal .container .tile-container .tile-row .tile {
+  height: 100%;
+  width: 237.5px;
+  float: left;
+  position: relative;
+}
+.sofa_page2 .modal .container .tile-container .tile-row .tile a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.sofa_page2 .modal .container .tile-container .tile-row .tile a img {
+  height: 100%;
+  width: 100%;
+}
+.sofa_page2 .modal .modal_background {
+  display: none;
+}
+.sofa_page2 .modal {
+  height: 450px;
+  width: 950px;
+}
+.sofa_page2 .modal .container {
+  position: relative;
+  height: 100%;
+  width: 70%;
+  background-color: white;
+}
+.sofa_page2 .modal .container .title {
+  font-size: 3em;
+  color: black;
+  position: absolute;
+  height: 20%;
+  padding: 10px;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+}
+.sofa_page2 .modal .container .title a {
+  position: absolute;
+  font-size: 0.3em;
+  text-decoration: underline;
+  color: black;
+  right: 10px;
+  top: 10px;
+}
+.sofa_page2 .modal .container .panel_container {
+  top: 20%;
+  height: 80%;
+  width: 100%;
+  margin: 0;
+  left: 0px;
+}
+.sofa_page2 .modal .container .panel_container .panel a {
+  border: 1px solid black;
+}
+/*Product Page*/
+.product_page {
+  height: 100%;
+  width: 100%;
+}
+.product_page .modal {
+  position: absolute;
+  height: 350px;
+  width: 950px;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  background-color: transparent;
+}
+.product_page .modal .container {
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  width: 950px;
+  left: 50%;
+  margin-left: -475px;
+  top: 0px;
+}
+.product_page .modal .container .button {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+}
+.product_page .modal .container .button img {
+  height: 100%;
+  width: 100%;
+}
+.product_page .modal .container .next {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  right: 0px;
+}
+.product_page .modal .container .next img {
+  height: 100%;
+  width: 100%;
+}
+.product_page .modal .container .previous {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  left: 0px;
+}
+.product_page .modal .container .previous img {
+  height: 100%;
+  width: 100%;
+}
+.product_page .modal .container .trail {
+  position: absolute;
+  left: 0px;
+  top: -4em;
+  font-size: 0.4em;
+  color: grey;
+}
+.product_page .modal .container .trail a {
+  font-family: avenir;
+  color: grey;
+  text-decoration: underline;
+  padding-right: 0.8em;
+}
+.product_page .modal .container .trail a.current {
+  text-decoration: none;
+}
+.product_page .modal .container .trail span {
+  font-family: avenir;
+  padding-right: 0.8em;
+}
+.product_page .modal .container .tile-container {
+  height: 100%;
+  position: absolute;
+  left: 0px;
+}
+.product_page .modal .container .tile-container .tile-row {
+  position: relative;
+  height: 50%;
+}
+.product_page .modal .container .tile-container .tile-row .tile {
+  height: 100%;
+  width: 237.5px;
+  float: left;
+  position: relative;
+}
+.product_page .modal .container .tile-container .tile-row .tile a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.product_page .modal .container .tile-container .tile-row .tile a img {
+  height: 100%;
+  width: 100%;
+}
+.product_page .modal .modal_background {
+  display: none;
+}
+.product_page .modal {
+  height: 450px;
+}
+.product_page .modal .container {
+  width: 950px;
+  left: 50%;
+  margin-left: -475px;
+  height: 100%;
+  background: white;
+  position: relative;
+}
+.product_page .modal .container .info_panel {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 40px;
+  width: 25%;
+  z-index: 1;
+}
+.product_page .modal .container .info_panel .title {
+  cursor: pointer;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  right: 0px;
+  padding: 0.45em;
+  font-size: 1em;
+  font-family: avenir;
+}
+.product_page .modal .container .info_panel .background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.product_page .modal .container .slideshow {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+.product_page .modal .container .img {
+  height: 100%;
+  width: 100%;
+}
+.product_page .modal .container .slideshow-next {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 2;
+  cursor: pointer;
+}
+.product_page .modal .container .slideshow-next img {
+  height: 100%;
+  width: 100%;
+}
+.product_page .modal .container .slideshow-back {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 40px;
+  width: 40px;
+  z-index: 2;
+  cursor: pointer;
+}
+.product_page .modal .container .slideshow-back img {
+  height: 100%;
+  width: 100%;
+}
+/*Contract Page*/
+.contract-page {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.contract-page .modal {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  padding: 50px 75px;
+  color: #FFFFFF;
+  width: 400px;
+}
+.contract-page .modal h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+.contract-page .modal p {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+.contract-page .modal {
+  width: 600px;
+}
+.contract-page .modal .buttonContainer {
+  width: 100%;
+  text-align: right;
+  height: auto;
+  margin-top: 2em;
+}
+.contract-page .modal .buttonContainer .button {
+  position: relative;
+}
+/*Showroom Page*/
+.showroom-page {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.showroom-page .modal {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  padding: 50px 75px;
+  color: #FFFFFF;
+  width: 400px;
+}
+.showroom-page .modal h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+.showroom-page .modal p {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+.showroom-page .modal {
+  width: 500px;
+}
+.showroom-page .modal h2 img {
+  height: 4em;
+  width: auto;
+}
+.showroom-page .modal .buttonContainer {
+  width: 100%;
+  text-align: right;
+  height: auto;
+  margin-top: 2em;
+}
+.showroom-page .modal .buttonContainer .button {
+  position: relative;
+}
+.showroom-page .modal .modal-close-button {
+  top: 20px;
+  right: 20px;
+}
+.design-page {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.design-page .modal {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  padding: 50px 75px;
+  color: #FFFFFF;
+  width: 400px;
+}
+.design-page .modal h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+.design-page .modal p {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+.design-page .modal {
+  width: 500px;
+}
+/*Contact Page*/.contact_page {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.contact_page .input {
+  font-family: proxima;
+  background: transparent;
+  border: 1px solid grey;
+  padding: 1em;
+  outline: none;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.contact_page .input:focus {
+  background: white;
+  color: #000000;
+}
+.contact_page .modal {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  padding: 50px 75px;
+}
+.contact_page .modal form {
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+}
+.contact_page .modal form table tr td {
+  text-align: left;
+  padding: 5px 0;
+}
+.contact_page .modal form table tr td input {
+  width: 200px;
+  font-family: proxima;
+  background: transparent;
+  border: 1px solid grey;
+  padding: 1em;
+  outline: none;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.contact_page .modal form table tr td input:focus {
+  background: white;
+  color: #000000;
+}
+.contact_page .modal form table tr td input:focus {
+  background: white;
+  color: #000000;
+}
+.contact_page .modal form table tr td textarea {
+  width: 400px;
+  height: 150px;
+  margin: 0;
+  font-family: proxima;
+  background: transparent;
+  border: 1px solid grey;
+  padding: 1em;
+  outline: none;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.contact_page .modal form table tr td textarea:focus {
+  background: white;
+  color: #000000;
+}
+.contact_page .modal form table tr td textarea:focus {
+  background: white;
+  color: #000000;
+}
+.contact_page .modal form table tr:last-child td {
+  font-family: avenir;
+  text-align: right;
+}
+.contact_page .modal form table tr:last-child td button {
+  border-radius: 2px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #808080;
+  color: #808080;
+  text-decoration: none;
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.contact_page .modal form table tr:last-child td button:hover {
+  color: white;
+  border: 1px solid white;
+}
+.contact_page .success-modal {
+  padding: 50px;
+}

@@ -1,0 +1,31 @@
+.contact_page .panel {
+  padding: 20px;
+}
+.contact_page .panel tr td {
+  text-align: left;
+  padding: 5px 0;
+}
+.contact_page .panel tr td input {
+  font-family: avenir;
+  background: transparent;
+  border: 1px solid grey;
+  padding: 1em;
+  width: 200px;
+}
+.contact_page .panel tr td textarea {
+  width: 400px;
+  height: 150px;
+  background: transparent;
+  border: 1px solid grey;
+  margin: 0;
+}
+.contact_page .panel tr:last-child td {
+  font-family: avenir;
+  text-align: right;
+}
+.contact_page .panel tr:last-child td button {
+  border-radius: 2px;
+  background: transparent;
+  border: 1px solid grey;
+  color: grey;
+}

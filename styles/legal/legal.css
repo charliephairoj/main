@@ -1,0 +1,15 @@
+.legal-modal {
+  width: 300px;
+  padding: 50px;
+  color: white;
+}
+.legal-modal h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+}
+.legal-modal p {
+  text-align: center;
+  font-size: 0.85em;
+  line-height: 1.4em;
+}

@@ -1,0 +1,58 @@
+
+
+@font-face {
+	font-family: 'future';
+	src: url('../fonts/FutuLt__.eot');
+	src: url('../fonts/FutuLt__.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FutuLt__.woff') format('woff'), 
+	url('../fonts/FutuLt__.ttf') format('truetype'), 
+	url('../fonts/FutuLt__.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima';
+	src: url('../fonts/proximanova-light-webfont.eot');
+	src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/proximanova-light-webfont.woff') format('woff'), 
+	url('../fonts/proximanova-light-webfont.ttf') format('truetype'), 
+	url('../fonts/proximanova-light-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofia';
+    src: url('../fonts/sofiaprolight-webfont-webfont.eot');
+    src: url('../fonts/sofiaprolight-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sofiaprolight-webfont-webfont.woff') format('woff'),
+         url('../fonts/sofiaprolight-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/sofiaprolight-webfont-webfont.svg#sofia_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+@font-face {
+    font-family: 'gyre';
+    src: url('../fonts/texgyreadventor-regular-webfont.eot');
+    src: url('../fonts/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/texgyreadventor-regular-webfont.woff') format('woff'),
+         url('../fonts/texgyreadventor-regular-webfont.ttf') format('truetype'),
+         url('../fonts/texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+				font-family: 'avenir';
+				src: url('../fonts/avenirltstdbook.eot');
+				src: url('../fonts/avenirltstdbook.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/avenirltstdbook.woff') format('woff'),
+						 url('../fonts/avenirltstdbook.ttf') format('truetype'),
+						 url('../fonts/avenirltstdbook.svg#avenirltstdbook') format('svg');
+				font-weight: normal;
+				font-style: normal;
+		}
